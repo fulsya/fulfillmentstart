@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini JS Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #c0c9b7;
+      text-align: center;
+      padding: 50px;
+    }
+
+    #quiz-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .answer-btn {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    .answer-btn:hover {
+      background-color: #45a049;
+    }
+
+    #next-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #reset-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #result {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="quiz-container">
+    <h1>Answer all questions</h1>
+    <div id="question" class="question">Loading question...</div>
+    <div id="answers">
+      <button class="answer-btn">Option 1</button>
+      <button class="answer-btn">Option 2</button>
+      <button class="answer-btn">Option 3</button>
+      <button class="answer-btn">Option 4</button>
+    </div>
+    <button id="next-btn">Next</button>
+    <button id="reset-btn">Clear</button>
+
+    <div id="result"></div>
+    <button id="erase-btn">Reset</button>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
